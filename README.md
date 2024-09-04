@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Minesweeper (Campo Minado) em Next
 
-## Getting Started
+## Descrição
 
-First, run the development server:
+Este projeto é uma implementação moderna do clássico jogo Campo Minado (Minesweeper) usando Next, TypeScript e Tailwind CSS. O jogo oferece modos single-player e multiplayer, com uma interface de usuário intuitiva e responsiva.
+
+## Características
+
+- Menu inicial com opções para single-player, multiplayer, instruções e créditos
+- Modo single-player com temporizador
+- Modo multiplayer para dois jogadores
+- Tabuleiro de jogo 10x10 com 15 minas
+- Interface responsiva adaptável a diferentes tamanhos de tela
+- Estilização moderna usando Tailwind CSS e componentes personalizados
+- Ícones intuitivos da biblioteca Lucide Next
+
+## Tecnologias Utilizadas
+
+- Next
+- TypeScript
+- Tailwind CSS
+- shadcn ui
+- Lucide (para ícones)
+- v0.dev
+
+## Como Instalar
+
+1. Clone o repositório:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/dwrp/minesweeper.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Entre no diretório do projeto:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+    cd minesweeper
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Instale as dependências:
 
-## Learn More
+```bash
+    npm install
+    #ou
+    yarn
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Inicie o servidor de desenvolvimento:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+    npm run dev
+    #ou
+    yarn dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+5. Abra [localhost:3000](http://localhost:3000) no seu navegador para ver o jogo.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Como Jogar
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. No menu inicial, escolha entre modo single-player ou multiplayer.
+2. No tabuleiro, clique em uma célula para revelá-la.
+3. Clique com o botão direito para marcar uma célula com uma bandeira.
+4. Os números nas células reveladas indicam quantas minas estão adjacentes.
+5. Evite clicar nas minas!
+6. No modo multiplayer, os jogadores se alternam para revelar células.
+7. O jogo termina quando uma mina é revelada ou todas as células seguras são descobertas.
+
+## Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE.md) para detalhes.
