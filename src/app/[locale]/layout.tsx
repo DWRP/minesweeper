@@ -1,4 +1,5 @@
 import "@/app/styles/globals.css";
+import { AdPlaceholder } from "@/components/ads";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -23,7 +24,9 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={inter.className} suppressHydrationWarning={true}>
         <NextIntlClientProvider messages={messages}>
+          <AdPlaceholder className="w-full h-24 mb-6" />
           {children}
+          <AdPlaceholder className="w-full h-24 mt-6" />
         </NextIntlClientProvider>
       </body>
     </html>
